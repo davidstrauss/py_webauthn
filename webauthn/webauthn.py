@@ -22,8 +22,7 @@ from cryptography.hazmat.primitives.hashes import SHA256
 from cryptography.x509 import load_der_x509_certificate
 from OpenSSL import crypto
 
-import const
-
+from . import const
 
 # Only supporting 'None', 'Basic', and 'Self Attestation' attestation types for now.
 AT_BASIC = 'Basic'

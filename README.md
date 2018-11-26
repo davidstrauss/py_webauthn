@@ -103,6 +103,18 @@ There is a [Flask][5] demo available in the `flask_demo` directory. Follow these
 5. Go to [https://localhost:5000][6] in your web browser. Try registering and logging in with a compatible U2F or WebAuthn authenticator.
 6. Profit?
 
+# Flask Demo (VirtualEnv)
+
+To run the [Flask][5] demo with [VirtualEnv][10]:
+
+1. `cd flask_demo`
+2. `python3 -m virtualenv env`
+3. `source env/bin/activate`
+4. `pip install -r requirements.txt`
+5. `python create_db.py`
+7. `python app.py`
+8. Go to [https://localhost:5000][6] in your web browser. Try registering and logging in with a compatible U2F or WebAuthn authenticator.
+
 # Flask Demo (Docker)
 
 To run the [Flask][5] demo with [Docker][7]:
@@ -127,3 +139,4 @@ Currently, PyWebAuthn does not support performing the following verifications.
 [7]: https://www.docker.com/
 [8]: https://www.w3.org/TR/webauthn/#dom-collectedclientdata-tokenbindingid
 [9]: https://www.w3.org/TR/webauthn/#dom-collectedclientdata-authenticatorextensions
+[10]: https://virtualenv.pypa.io/en/latest/
